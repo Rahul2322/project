@@ -1,0 +1,21 @@
+<!-- my code -->
+<p id='clock'></p>
+<script type='text/javascript'>
+function showTime(){
+    let clock=new Date();
+    let hours=clock.getHours();
+    let minutes=clock.getMinutes();
+    let seconds=clock.getSeconds();
+    minutes=(minutes<10?"0":'')+minutes;
+    seconds=(seconds<10?"0":'')+seconds;
+
+
+    let timestr=hours+':'+minutes+':'+seconds;
+    document.getElementById('clock').innerHTML=timestr
+}
+let time=setInterval(showTime,1000)
+
+</script>
+
+
+
